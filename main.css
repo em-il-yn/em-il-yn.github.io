@@ -58,6 +58,7 @@ body {
     font-size: 16px; /* px fallback */
     font-size: 1.6rem; /* default font-size for document */
     font-family: Copperplate, Arial, Helvetica, sans-serif;
+    color: #f09d68;
     background-color: #020239;
     position: relative;
     line-height: 2rem;
@@ -140,24 +141,6 @@ a.source:hover{
     color: rgb(69, 69, 69);
 }
 
-.quote {
-    padding: 0.75rem 1rem;
-    display: block;
-    width: 100%;
-    line-height: 2.4rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.8rem;
-    letter-spacing: 0.5px;
-    font-style: italic;
-    color: rgb(99, 99, 99);
-}
-
-.source {
-    text-align: right;
-    display: block;
-    width: 100%;
-    padding-bottom: 0.5rem;
-}
 .inline {
     display: inline;
     letter-spacing: 0;
