@@ -15,7 +15,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, div.gallery {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -28,13 +28,6 @@ article, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, div.gallery {
 	display: block;
 }
-
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-  }
 
 body {
 	line-height: 1;
@@ -54,20 +47,18 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 /*    End of reset    */
 
-
-/* this is the "root" in "root em." */
+/* this is the start of formatting */
 html {
-    font-size: 62.5%; /* Now 10px = 1rem! */
+    font-size: 62.5%; /* Now 10px = 1rem */
 }
   
 body {
     font-size: 16px; /* px fallback */
     font-size: 1.6rem; /* default font-size for document */
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fafafa;
+    font-family: Copperplate, Arial, Helvetica, sans-serif;
+    background-color: #020239;
     position: relative;
     line-height: 2rem;
 }
@@ -201,7 +192,7 @@ nav, aside {
 
 @media (min-width: 1000px) {
 /*    Navigation Bar    */
-nav, aside {
+nav {
     display: block;
 }
 main {
@@ -228,6 +219,7 @@ nav li a{
 nav li a:hover{
     text-decoration: underline;
     color: rgb(69, 69, 69);
+}
 }
 
 @media (min-width: 1400px) {
