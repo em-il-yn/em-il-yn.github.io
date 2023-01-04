@@ -63,6 +63,13 @@ body {
     line-height: 2rem;
 }
 
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+
 * {
     box-sizing: border-box;
     color: rgb(69, 69, 69)
@@ -166,24 +173,6 @@ a.inline {
     text-decoration: underline;
     color: rgb(69, 69, 69);
 }
-
-/*    References    */
-.author {
-    padding-left: 1.5rem;
-}
-cite {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.8rem;
-}
-.references a {
-    color: orange;
-    text-decoration: underline;
-}
-.references a:hover {
-    color: black;
-    text-decoration: none;
-}
-
 
 /* hidden on mobile */
 nav, aside {
