@@ -24,10 +24,18 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, div.gallery {
 	display: block;
 }
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+
 body {
 	line-height: 1;
 }
@@ -222,28 +230,9 @@ nav li a:hover{
     color: rgb(69, 69, 69);
 }
 
-/*    Emailer    */
-
-aside {
-    position: absolute;
-    padding: 1.5rem;
-    width: 30rem;
-    right: 0;
-    border-left: 1px solid rgb(69, 69, 69);
-    height: 40rem;
-}
-aside p {
-    font-size: 1.6rem;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 1.5rem;
-}
-}
-
-
 @media (min-width: 1400px) {
 body, header {
     width: 1400px;
     margin: 0 auto;
 }
 }
-Footer
