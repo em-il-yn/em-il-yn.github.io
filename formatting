@@ -1,248 +1,71 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/*    End of reset    */
-
-
-/* this is the "root" in "root em." */
-html {
-    font-size: 62.5%; /* Now 10px = 1rem! */
-}
-  
-body {
-    font-size: 16px; /* px fallback */
-    font-size: 1.6rem; /* default font-size for document */
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fafafa;
-    position: relative;
-    line-height: 2rem;
-}
-
-* {
-    box-sizing: border-box;
-    color: rgb(69, 69, 69)
-}
-
-/*    Header    */
-
-header {
-    position: fixed;
-    width: 100%;
-}
-#header-container {
-    position: relative;
-}
-h1 {
-    margin: 0 1.5rem 1.5rem 1.5rem;
-    padding-left: 1.5rem;
-    width: 100%;
-    height: 9rem;
-    border-bottom: 1px solid rgb(69, 69, 69);
-    background-color: #fafafa;
-
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 4.2rem;
-    line-height: 9rem;
-}
-
-/*    Main    */
-
-main {
-    padding: 9rem 17rem 3rem 3rem;
-    margin: 0 auto;
-}
-main section {
-    margin: 0 auto;
-    max-width: 50rem;
-    min-width: 20rem;
-    padding-bottom: 1.5rem;
-}
-main section article {
-    margin: 0 auto;
-    padding-bottom: 1.5rem; 
-}
-
-
-h2, h3, p {
-    padding-top: 10.5rem;
-    margin-top: -9rem;
-}
-h2, h3 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 3.6rem;
-    line-height: 4.4rem;
-    padding-bottom: 0.75rem;
-}
-h3 {
-    font-size: 2.8rem;
-    line-height: 3.6rem; 
-}
-p {
-    padding-bottom: 0.75rem;
-}
-
-.highlight {
-    font-weight: bold;
-    letter-spacing: 0.5px; 
-}
-
-a.source {
-    text-decoration: none;
-    color: orange;
-}
-a.source:hover{
-    text-decoration: underline;
-    color: rgb(69, 69, 69);
-}
-
-.quote {
-    padding: 0.75rem 1rem;
-    display: block;
-    width: 100%;
-    line-height: 2.4rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.8rem;
-    letter-spacing: 0.5px;
-    font-style: italic;
-    color: rgb(99, 99, 99);
-}
-
-.source {
-    text-align: right;
-    display: block;
-    width: 100%;
-    padding-bottom: 0.5rem;
-}
-.inline {
-    display: inline;
-    letter-spacing: 0;
-}
-a.inline {
-    text-decoration: underline;
-    color: rgb(69, 69, 69);
-}
-
-/*    References    */
-.author {
-    padding-left: 1.5rem;
-}
-cite {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.8rem;
-}
-.references a {
-    color: orange;
-    text-decoration: underline;
-}
-.references a:hover {
-    color: black;
-    text-decoration: none;
-}
-
-
-/* hidden on mobile */
-nav, aside {
-    display: none;
-}
-
-@media (min-width: 1000px) {
-/*    Navigation Bar    */
-nav, aside {
-    display: block;
-}
-main {
-    margin: 0 30rem 0 20rem;
-}
-nav {
-    position: absolute;
-    padding: 1.5rem 1.5rem 1.5rem 0;
-    width: 20rem;
-    border-right: 1px solid rgb(69, 69, 69);
-    height: 60rem;
-}
-nav ul {
-    padding-left: 1.5rem;
-}
-nav>ul>li:last-of-type {
-    padding-top: 2rem;
-}
-nav li a{
-    text-decoration: none;
-    color: orange;
-    line-height: 2.5rem;
-}
-nav li a:hover{
-    text-decoration: underline;
-    color: rgb(69, 69, 69);
-}
-
-/*    Emailer    */
-
-aside {
-    position: absolute;
-    padding: 1.5rem;
-    width: 30rem;
-    right: 0;
-    border-left: 1px solid rgb(69, 69, 69);
-    height: 40rem;
-}
-aside p {
-    font-size: 1.6rem;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 1.5rem;
-}
-}
-
-
-@media (min-width: 1400px) {
-body, header {
-    width: 1400px;
-    margin: 0 auto;
-}
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Emilyn Sim</title>
+</head>
+<body>
+    <header>
+        <div id="header-container">
+            <h1>Experience</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#1">Broadband Internet</a>
+                        <ul>
+                            <li><a href="#1.1">Who has access?</a></li>
+                            <li><a href="#1.2">Why is it important?</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#2">Barriers to Broadband</a>
+                        <ul>
+                            <li><a href="#2.1">Whats being done?</a></li>
+                            <li><a href="#2.2">The Broadband Fund</a></li>
+                            <li><a href="#2.3">The Market</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#3">What you can do</a>
+                        <ul>
+                            <li><a href="#3.1">Letter Template</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#references">References</a>
+                    </li>
+                </ul>
+            </nav>
+            <aside>
+                <h3>Contact the CRTC!</h3>
+                <p>Visit the CRTC's website and voice your opinion about broadband internet <a target="_blank" href="https://applications.crtc.gc.ca/question/eng/public-inquiries-form?t=32&_ga=2.256689289.342669778.1587319844-1502577448.1586727451">here</a>.</p>
+                <p>Don't know where to start, <a href="#3.1">here</a>'s a template to get you started!</p>
+            </aside>
+        </div>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2 id="1">Broadband Internet</h2>
+                <p><span class="highlight">Broadband internet as defined by the CRTC is a download speed of 50 mbps, and an upload speed of 10mbps.</span> Meaning you will be able to upload files, photos, videos, and content online at a reasonable speed.</p>
+                <p><span class="highlight">CRTC stands for the Canadian Radio-television and Telecommunications Commission.</span> They advocate on behalf of the public interest in Canada. As their mandate states: <span class="quote">“The CRTC is an administrative tribunal that regulates and supervises broadcasting and telecommunications in the public interest. We are dedicated to ensuring that Canadians have access to a world-class communication system that promotes innovation and enriches their lives.”</span><a target="_blank" href="https://crtc.gc.ca/eng/acrtc/acrtc.htm" class="source">(CRTC, 2018)</a></p>
+            </article>
+            <article>
+                <h3 id="1.1">Who has access to broadband internet?</h3>
+                <p>Currently <span class="highlight">85.7 percent of Canadians have access to broadband internet.</span> The issue isn’t who has broadband internet, <span class="highlight">the issue is who doesn’t have broadband internet and why.</span></p>  
+                <p>Most urban areas such as larger cities have 100% broadband coverage, whereas rural areas of Canada only have 40.5% coverage.</p>
+                <p>This data is provided to the CRTC by Internet Service Providers, the companies the CRTC is mandated to regulate. They state that the data <span>“is based upon detailed coverage information provided by Internet Service Providers to the CRTC”.</span> <a href="https://www.ic.gc.ca/eic/site/139.nsf/eng/00007.html" class="source inline">(Digital Transformation Service, 2020)</a> No information concerning internet access in Indigenous communities is provided on the CRTC’s website, when those living in Indigenous communities face the largest barriers to reliable, and sufficient internet connection. <span>“The non-profit First Nations Technology Council estimates 75 per cent of communities don’t have access that meets the standard, a rate that’s similar nationwide.”</span><a target="_blank" href="https://thetyee.ca/News/2019/12/12/Closing-BC-Indigenous-Internet-Gap/"  class="source inline">(Hyslop, 2019)</a></p>
+            </article>
+            <article>
+                <h3 id="1.2">Why is Broadband internet important?</h3>
+                <p>The question of why broadband internet is important seems like one that should be obvious. We use the internet in so many facets of our life now, that not having access can put individuals at a severe disadvantage. Especially now, when we preach long distance connectivity with others. The internet helps provide people in rural areas with limited access to healthcare professionals with vital <span class="highlight">medical information</span>. It connects people with <span class="highlight">job opportunities, and learning opportunities.</span> Having an adequate upload speed allows people to utilize their skills as creators. Reliable internet also helps <span class="highlight">small businesses connect to the digital economy.</span></p>
+                <p>In light of the current global pandemic public schools are suddenly closed and require the internet to learn. <span class="highlight">School needs to be a right for all Canadians so it only follows that if students are required to study from home the internet should be a right.</span></p>
+                <p>If you think that not having broadband simply means having to wait a little longer for a youtube video to load, that is not the case. Minimum speeds are required for functions like conference calls, and video chats among other things <span>“Andrew Negus said his clients, architectural firms in Toronto, send large files through email to his company and slow internet speeds hurt their ability to do business. "We spend half a day to downloading them on our end," he said. "Some of these are very time sensitive quote opportunities. We have a day or two to get a price in ... it puts us at a disadvantage."”</span><a target="_blank" href="https://www.cbc.ca/news/canada/toronto/ont-rural-broadband-1.5278660" class="source inline">(The Canadian Press, 2019)</a></p>
+            </article>
+        </section>
+    </main>
+    <footer>By Emilyn Sim</footer>
+</body>
+</html>
