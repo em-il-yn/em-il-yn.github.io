@@ -64,10 +64,7 @@ body {
 }
 
 div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+    display: block;
   }
 
 * {
@@ -90,7 +87,7 @@ h1 {
     width: 100%;
     height: 9rem;
     border-bottom: 1px solid rgb(69, 69, 69);
-    background-color: #fafafa;
+    background-color: #020239;
 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 4.2rem;
